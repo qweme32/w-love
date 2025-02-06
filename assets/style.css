@@ -1,0 +1,61 @@
+body {
+    background: #111;
+    font-family: "Inter";
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+}
+
+.content {
+    height: 90svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block {
+    width: 290px;
+}
+
+.avatars {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.heart {
+    width: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96px;
+}
+
+#heart {
+    transition: 1s;
+    animation: anim 1s infinite;
+    color: #808080;
+}
+
+.counter {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.b {
+    color: #ffffff25;
+}
+
+@keyframes anim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
