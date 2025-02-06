@@ -44,7 +44,7 @@
 
         const start = 1736524800;
 
-        setInterval(() => {
+        const update = () => {
             const now = Math.floor(Date.now() / 1000);
             let dur = now - start;
 
@@ -57,6 +57,12 @@
             days.textContent = dVal.toString().padStart(2, '0');
             hours.textContent = hVal.toString().padStart(2, '0');
             minutes.textContent = mVal.toString().padStart(2, '0');
+        }
+
+        update();
+
+        setInterval(() => {
+            update();
         }, 1000)
     </script>
 </body>
